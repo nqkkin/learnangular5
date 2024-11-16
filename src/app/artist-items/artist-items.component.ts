@@ -1,12 +1,15 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-artist-items',
-  standalone: true,
-  imports: [],
   templateUrl: './artist-items.component.html',
-  styleUrl: './artist-items.component.css'
+  inputs: ['artist']
 })
-export class ArtistItemsComponent {
+export class ArtistItemsComponent implements OnInit {
+
+  constructor() { }
+
+  ngOnInit() {
+  }
 
 }
